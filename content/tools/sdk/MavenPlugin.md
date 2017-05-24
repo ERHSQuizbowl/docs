@@ -30,7 +30,7 @@ Below is a table showing all the different parameters for the plugin. These sett
 | TeamServer API Url           | API Url to your TeamServer instance                    |
 | TeamServer Organization Uuid | Organization Uuid of the configured user found in Organization Settings |
 | Application Name             | Name of application you set with ```-Dcontrast.appname``` <BR> This is used to filter for your application |
-| Minimum Severity Level       | Minimum Severity level to filter for (Note, Low, Medium, High, Critical). This property is inclusive. |
+| Minimum Severity Level       | Minimum Severity level to filter for (NOTE, LOW, MEDIUM, HIGH, CRITICAL). This property is inclusive. |
 | Server Name                  | Name of server you set with ```-Dcontrast.server``` <BR> Use *app.contrastsecurity.com/Contrast/api* if you are a SaaS customer |
 | Jar Path                     | Path of a local jar file if you don't want to download the agent again                  |
 
@@ -66,9 +66,9 @@ Below is a sample TeamServer configuration for the Contrast Maven Plugin:
         <serviceKey>testServiceKEy</serviceKey>
         <apiUrl>http://www.app.contrastsecurity.com/Contrast/api</apiUrl>
         <orgUuid>QWER-ASDF-ZXCV-ERTY</orgUuid>
-        <appName>VehicleMPG-Master</appName>
+        <appName>Test Application</appName>
         <serverName>jenkins.slave1</serverName>
-        <minSeverity>High</minSeverity>
+        <minSeverity>HIGH</minSeverity>
     </configuration>
 </plugin>
 ```
